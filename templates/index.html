@@ -3,53 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página con Texto y Imágenes</title>
+    <title>constructora</title>
     <style>
+        /* Estilos generales */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: "Courier New", Courier, monospace;
+            color: #ffffff;
+            background-color: #000000;
             margin: 20px;
+            line-height: 1.8;
         }
+
         h1 {
             text-align: center;
-            color: #4CAF50;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
         }
+
+        p {
+            font-size: 1.2em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
         .images {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             margin-top: 20px;
         }
+
         .images img {
-            max-width: 200px;
+            max-width: 450px;
             margin: 10px;
-            border: 2px solid #ccc;
-            border-radius: 8px;
+            border: 3px solid #ffffff;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .images img:hover {
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #000000;
+            background-color: #ffffff;
+            text-decoration: none;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #000000;
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenidos a mi página</h1>
+    <h1>Empresa constructora</h1>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, nunc et pellentesque consequat, 
-        felis turpis fermentum sapien, ut facilisis turpis arcu in orci. Suspendisse ac tortor ut risus placerat 
-        venenatis. Cras tincidunt arcu at mauris venenatis, vitae volutpat velit scelerisque. Vivamus euismod suscipit 
-        ex, nec consequat libero accumsan ut. Praesent sit amet urna at orci tincidunt convallis sit amet ut odio. 
-        Integer varius, ligula a pharetra dapibus, nulla nulla tincidunt elit, eget eleifend lacus magna non enim.
+        México es un país con una alta actividad sísmica, debido a la interacción de diversas placas tectónicas en su territorio, 
+        lo que genera terremotos frecuentes en diferentes regiones. Las zonas más afectadas por terremotos incluyen principalmente 
+        la costa del Pacífico, el Valle de México, y algunas otras áreas del sur y sureste del país. A pesar de los esfuerzos por 
+        construir infraestructuras más resistentes, muchos edificios y estructuras aún no están completamente preparados para 
+        soportar sismos de alta magnitud, lo que pone en riesgo la seguridad de los habitantes y la estabilidad económica de 
+        las regiones afectadas.
     </p>
     <p>
-        Sed scelerisque fermentum quam, in dignissim urna. Donec nec nunc a nunc pulvinar vehicula. Nulla vel quam a 
-        nulla porttitor efficitur. Aenean vestibulum, lorem eget bibendum ultrices, purus nulla efficitur elit, 
-        vel viverra nisl turpis et eros. Fusce sit amet nibh ultricies, mollis sapien at, sodales magna. Sed eget 
-        nulla in mi tincidunt dignissim. Curabitur condimentum risus sed dolor bibendum placerat. 
+        La empresa constructora en cuestión tiene a su disposición una base de datos que contiene 
+        información detallada sobre las zonas más propensas a terremotos en toda la República Mexicana. 
+        Esta información puede ser utilizada para identificar áreas de alta vulnerabilidad 
+        sísmica y crear soluciones de infraestructura innovadoras y resistentes.
     </p>
-    
+
+   
     <div class="images">
-        <img src="https://via.placeholder.com/200" alt="Imagen 1">
-        <img src="https://via.placeholder.com/200" alt="Imagen 2">
-        <img src="https://via.placeholder.com/200" alt="Imagen 3">
-        <img src="https://via.placeholder.com/200" alt="Imagen 4">
-        <img src="https://via.placeholder.com/200" alt="Imagen 5">
+        <img src="/static/Grafico1.png" alt="Imagen 1" width="600">
+        <img src="/static/Grafico2.png" alt="Imagen 2" width="600">
+        <img src="/static/Grafico3.png" alt="Imagen 3" width="600">
+        <img src="/static/Grafico4.png" alt="Imagen 4" width="600">
+        <img src="/static/Grafico5.png" alt="Imagen 5" width="600">
     </div>
+
+    <title>Diccionario de Datos</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Diccionario de Datos
+    </header>
+
+    <table>
+        <caption>Tabla Descriptiva de Variables</caption>
+        <thead>
+            <tr>
+                <th>Variable</th>
+                <th>Tipo</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fecha UTC</td>
+                <td>Date</td>
+                <td>Fecha en formato UTC (YYYY-MM-DD)</td>
+            </tr>
+            <tr>
+                <td>Hora UTC</td>
+                <td>Char</td>
+                <td>Hora en formato UTC (HH:MM:SS)</td>
+            </tr>
+            <tr>
+                <td>Magnitud</td>
+                <td>Numeric</td>
+                <td>Valor numérico que representa la magnitud del sismo</td>
+            </tr>
+            <tr>
+                <td>Latitud</td>
+                <td>Numeric</td>
+                <td>Valor numérico de la latitud geográfica del sismo</td>
+            </tr>
+            <tr>
+                <td>Longitud</td>
+                <td>Numeric</td>
+                <td>Valor numérico de la longitud geográfica del sismo</td>
+            </tr>
+            <tr>
+                <td>Profundidad</td>
+                <td>Numeric</td>
+                <td>Profundidad del sismo en kilómetros</td>
+            </tr>
+            <tr>
+                <td>Referencia de localización</td>
+                <td>Numeric</td>
+                <td>Código numérico de referencia geográfica</td>
+            </tr>
+            <tr>
+                <td>Fecha local</td>
+                <td>Date</td>
+                <td>Fecha local del evento sísmico</td>
+            </tr>
+            <tr>
+                <td>Hora local</td>
+                <td>Char</td>
+                <td>Hora local del evento sísmico</td>
+            </tr>
+            <tr>
+                <td>Estatus</td>
+                <td>Char</td>
+                <td>Estado del evento sísmico (ej. "revisado")</td>
+            </tr>
+        </tbody>
+    </table>
+
+   
 </body>
 </html>
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario de Datos</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        table {
+            width: 80%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        caption {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Diccionario de Datos
+    </header>
+
+    <table>
+        <caption>Tabla Descriptiva de Variables</caption>
+        <thead>
+            <tr>
+                <th>Variable</th>
+                <th>Tipo</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fecha UTC</td>
+                <td>Fecha</td>
+                <td>Fecha en formato UTC (YYYY-MM-DD)</td>
+            </tr>
+            <tr>
+                <td>Hora UTC</td>
+                <td>Texto</td>
+                <td>Hora en formato UTC (HH:MM:SS)</td>
+            </tr>
+            <tr>
+                <td>Magnitud</td>
+                <td>Numérico</td>
+                <td>Valor numérico que representa la magnitud del sismo</td>
+            </tr>
+            <tr>
+                <td>Latitud</td>
+                <td>Numérico</td>
+                <td>Valor numérico de la latitud geográfica del sismo</td>
+            </tr>
+            <tr>
+                <td>Longitud</td>
+                <td>Numérico</td>
+                <td>Valor numérico de la longitud geográfica del sismo</td>
+            </tr>
+            <tr>
+                <td>Profundidad</td>
+                <td>Numérico</td>
+                <td>Profundidad del sismo en kilómetros</td>
+            </tr>
+            <tr>
+                <td>Referencia de localización</td>
+                <td>Numérico</td>
+                <td>Código numérico de referencia geográfica</td>
+            </tr>
+            <tr>
+                <td>Fecha local</td>
+                <td>Fecha</td>
+                <td>Fecha local del evento sísmico</td>
+            </tr>
+            <tr>
+                <td>Hora local</td>
+                <td>Texto</td>
+                <td>Hora local del evento sísmico</td>
+            </tr>
+            <tr>
+                <td>Estatus</td>
+                <td>Texto</td>
+                <td>Estado del evento sísmico (ej. "revisado")</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
